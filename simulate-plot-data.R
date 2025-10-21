@@ -9,10 +9,10 @@
 
 # simulate predictor (x) variable
 predictor <- rnorm(n = 100)
-# rnorm randomly samples from a normal distirbution
+# rnorm randomly samples from a normal distribution
 
 # simulate response (y) variable with noise 
-response <- 2 * predictor + rnorm(n = 100, sd = 0.2)
+response <- 2 * predictor + rnorm(n = length(predictor), sd = 0.2)
 
 # plot the data
 plot (x = predictor, y = response)
